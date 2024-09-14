@@ -1,0 +1,200 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; 
+    background-color: #f8f9fa;
+}
+
+/* Estilo do Header */
+header {
+    width: 100%;
+    background-color: #e07a5f;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: #d15d39; 
+}
+
+/* Estilo do Menu */
+.menu-desktop {
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem; 
+}
+
+nav ul li {
+    margin: 0; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #d15d39;
+}
+
+/* Estilo do Main */
+main {
+    padding: 5rem 2rem 2rem; 
+}
+
+section {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Estilo do introdução */
+.intro-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Estilo da foto da introdução */
+.intro-photo {
+    flex: 1;
+}
+
+.intro-image {
+    height: auto;
+    border-radius: 8px;
+    width: 300px;
+    height: 350px;
+    margin-left: 120px;
+}
+
+/* Estilo do texto da introdução */
+.intro-text {
+    flex: 1; 
+    margin-right: 130px;
+}
+
+/* Estilo do Accordion */
+.accordion {
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-toggle {
+    display: none; 
+}
+
+.accordion-button {
+    background-color: #e07a5f; 
+    color: #ffffff;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: #d15d39; 
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s ease;
+    padding: 0 1rem;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.accordion-toggle:checked + .accordion-button + .accordion-content {
+    max-height: 200px; 
+}
+
+.accordion-content p {
+    margin: 0;
+}
+
+/* Estilo Experiência */
+.experience-grid {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap; 
+}
+
+.experience-card {
+    background-color: #ffffff;
+    border: 1px solid #e07a5f; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+}
+
+/* Estilo do Rodapé */
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px rgba(240, 248, 255, 0.111);
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #e07a5f;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .2s;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid #e07a5f;
+}
+
+footer .line-footer p i {
+    color: #e07a5f;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: aliceblue;
+}
+
+div .flex {
+    display: flex;
+    justify-content: flex-end;
+}
